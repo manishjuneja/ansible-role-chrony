@@ -1,0 +1,11 @@
+---
+chrony_pkg_state: present
+chrony_service_state: started
+chrony_service_enabled: yes
+chrony_config_server:
+  - 0.in.pool.ntp.org
+  - 1.in.pool.ntp.org
+  - 2.in.pool.ntp.org
+  - 3.in.pool.ntp.org
+chrony_config_logdir: /var/log/chrony
+chrony_timezone: Asia/Kolkata
